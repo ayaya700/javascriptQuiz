@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="validateForm.css" />
+  </head>
+  <body>
+    <form id="registrationForm" onsubmit="return validateForm(event)">
+      <div class="input-control">
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          id="fname"
+          title="Please enter a valid name"
+          name="fname"
+        />
+        <div id="fnameError" class="validation-message"></div>
+      </div>
+      <div class="input-control">
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          title="Please enter a valid name"
+          name="lname"
+        />
+        <div id="lnameError" class="validation-message"></div>
+      </div>
+      <div class="input-control">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          title="Please enter a valid email"
+          name="email"
+        />
+        <div id="emailError" class="validation-message"></div>
+      </div>
+      <div class="input-control">
+        <label for="password">Password:</label>
+        <input type="password" id="pass" name="password" />
+        <div id="passError" class="validation-message"></div>
+      </div>
+      <div class="input-control">
+        <label for="repass">Re-enter password:</label>
+        <input type="password" id="repass" name="repass" />
+        <div id="repassError" class="validation-message"></div>
+      </div>
+      <button type="submit" value="submit">Sign up</button>
+    </form>
+    <script src="validateForm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+p {
+  width: 70%;
+  max-width: 636px;
+  height: auto;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 10px;
+  margin: 100px;
+  position: relative;
+  left: 5%;
+}
+
+#startBtn {
+  width: 30%;
+  max-width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-color: #2b5d68;
+  border-style: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 5px;
+  margin: -30px;
+  position: relative;
+  left: 14%;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  bottom: 355px;
+}
+
+#startBtn:hover {
+  background-color: #1e3f46;
+}
+#signupBtn {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 3px solid #2b5d68;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  left: 80%;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  top: 95px;
+}
+img {
+  max-width: 40%;
+  height: auto;
+  margin: 10px 0;
+  position: relative;
+  left: 55%;
+  bottom: 350px;
+}

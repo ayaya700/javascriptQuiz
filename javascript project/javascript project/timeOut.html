@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeout</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url(./imgs/img6.jpg);
+        background-size: cover;
+      }
+
+      #showScore {
+        background-color: #fcfeff;
+        color: #5d5dc7;
+        font-size: 18px;
+        padding: 60px;
+        border-radius: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <div id="container"></div>
+    <div id="showScore"></div>
+
+    <script>
+      var score = localStorage.getItem("score");
+
+      user = JSON.parse(localStorage.getItem("user"));
+      document.getElementById("showScore").textContent =
+        "Sorry Timeout!" +
+        " " +
+        user.fristName +
+        " " +
+        user.lastName +
+        " " +
+        "your score is" +
+        " " +
+        `${score}/10`;
+    </script>
+  </body>
+</html>
